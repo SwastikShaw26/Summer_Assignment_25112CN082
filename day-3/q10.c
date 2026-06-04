@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i,j,count=0,k;
+    int a,b,i,j,count=0,found=0;
     printf("Enter the lower limit and upper limit of the range\n");
     scanf("%d\n%d",&a,&b);
     printf("The prime no's in the range %d and %d are:\n",a,b);
@@ -17,14 +17,11 @@ int main()
     if(count==2)
     {
         printf("%d\n",i);
-    }
-    else
-    {
-        k=0;
+        found=1;
     }
     count=0;
 }
-if(k==0)
+if(found==0)
 {
     printf("not present");
 }
